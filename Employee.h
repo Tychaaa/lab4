@@ -5,33 +5,33 @@
 #include <iostream>
 using namespace std;
 
-// Класс для объекта "Сотрудник магазина"
+// РљР»Р°СЃСЃ РґР»СЏ РѕР±СЉРµРєС‚Р° "РЎРѕС‚СЂСѓРґРЅРёРє РјР°РіР°Р·РёРЅР°"
 class Employee : public Human {
 private:
 
-    Human person;       // Используем класс Human для представления сотрудника
-    string position;    // Должность
-    float salary;       // Зарплата
+    Human person;       // РСЃРїРѕР»СЊР·СѓРµРј РєР»Р°СЃСЃ Human РґР»СЏ РїСЂРµРґСЃС‚Р°РІР»РµРЅРёСЏ СЃРѕС‚СЂСѓРґРЅРёРєР°
+    string position;    // Р”РѕР»Р¶РЅРѕСЃС‚СЊ
+    float salary;       // Р—Р°СЂРїР»Р°С‚Р°
 
 public:
 
-    // Контруктор без параметров
+    // РљРѕРЅС‚СЂСѓРєС‚РѕСЂ Р±РµР· РїР°СЂР°РјРµС‚СЂРѕРІ
     Employee();
-    // Контруктор с параметрами
+    // РљРѕРЅС‚СЂСѓРєС‚РѕСЂ СЃ РїР°СЂР°РјРµС‚СЂР°РјРё
     Employee(string first, string last, string pos, float sal);
-    // Деструктор
+    // Р”РµСЃС‚СЂСѓРєС‚РѕСЂ
     ~Employee();
 
-    // Метод для вывода информации о сотруднике
+    // РњРµС‚РѕРґ РґР»СЏ РІС‹РІРѕРґР° РёРЅС„РѕСЂРјР°С†РёРё Рѕ СЃРѕС‚СЂСѓРґРЅРёРєРµ
     void outputEmployee();
 
-    // Сеттеры для класса
+    // РЎРµС‚С‚РµСЂС‹ РґР»СЏ РєР»Р°СЃСЃР°
     void setFirstName(string first);
     void setLastName(string last);
     void setPosition(string position);
     void setSalary(float salary);
 
-    // Геттеры для класса
+    // Р“РµС‚С‚РµСЂС‹ РґР»СЏ РєР»Р°СЃСЃР°
     const string getFirstName();
     const string getLastName();
     const string getPosition();
